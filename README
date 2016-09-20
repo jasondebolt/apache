@@ -1,0 +1,7 @@
+docker build -t jasondebolt/apache .
+docker run -d -p 80:80 jasondebolt/apache
+docker ps
+verify at localhost
+docker push jasondebolt/apache
+docker stop {sha}
+docker rm {sha}
